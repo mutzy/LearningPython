@@ -2,51 +2,66 @@
 
 ## Introduction
 
-This repository will contain everything you will need to learn to deal with data analysis activities on your own. It will be broken down to module so that you can understand everything well and clearly.
+We are going to practice the basic of Python programming using a simple text-based game, called "Guess the Number" game. This program helps reinforce concepts like:
 
-Firstly, this is a _README.md_ file this is necessary to understand the repository and mostly found in may git projects but not necessary in every case.
+- Variables
+- Functions
+- Loops
+- Conditionals
+- User input
+- Library Imports
 
-## Python Installation into local machine.
+## Guess the Number Game
 
-This will not be guided as I believe you know how to so we can skip this. Otherwise, ask if needed.
+To run the program use **_ python guess_the_number.py _**
 
-## Set up virtual environment while inside this folder.
+### Import necessary modules:
 
-When working on you python projects it is best to work inside a virtual enviroment that is if you have multiple project otherwise also skip this.
+      random module to generate a random number.
 
-## Install necessary requirements
+### Generate a random number:
 
-### IDE:
+        Use random.randint() to generate a random number between 1 and 100.
 
-- Jupyter Notebook/Lab: Best for interactive data analysis and visualization.(Recommend)
-- PyCharm: Best for a comprehensive and feature-rich development environment (especially the Professional version).
-- VS Code: Best for a lightweight, customizable IDE with powerful extensions.
+### Set up the game loop:
 
-## Nature of Lesson
+        Use a while loop to keep the game running until the player guesses the number.
 
-We will use branches to divide the classes up when done we will move to the next that means you will git checkout to the required branch.
-But to make the lesson include learning git / github you will include this in this lessons.
+### Get user input:
 
-### Git commands
+        Use input() to get the player's guess.
 
-git clone https://github.com/{username}/{repo}.git - This command clones the github repository to your local machine. Or click just click download to download a zip file and extract the same.
+### Compare the guess to the random number:
 
-git checkout {branchname} - This command allows you to switch branches
+        Use if-elif-else statements to compare the guess and provide feedback (e.g., "Too high," "Too low," or "Correct").
 
-git branch {branchname} - This commmand creates a new branch
+### End the game:
 
-git merge {branchwherechangesare} {currentbranchname}
+        Break out of the loop when the player guesses correctly.
 
-git commit -m "{Your commit message}" - This allows you to write a summary of what you have done before pushing to remote repository
+## Key Concepts Practiced
 
-git pull - This allows you to fetch and also commit updates from remote repo if you are working in a team
+- _Importing Modules:_ Using the import statement to include the random module.
+- _Random Number Generation:_ Using random.randint() to generate a number.
+- _Loops:_ Using a while loop to keep the game running until the condition is met.
+- _Conditionals:_ Using if-elif-else statements to compare the user's guess and provide feedback.
+- _User Input:_ Using input() to get data from the user and isdigit() to validate it.
+- _Type Conversion:_ Converting the input string to an integer with int().
 
-git push origin {branchname} - This allows you to push your changes to remote repository after committing you changes using.
+# Assignment
 
-# What you will learn when done.
+1. Create a new branch named "assignment1"
+2. Create a new file named "assignmentone.py"
 
-1. Python Programming.
-2. SQL querying.
-3. R Programming.
-4. Necessary Libraries Importing and Use.
-5. Finally Use of Frameworks and Integrations to external platforms.
+3. Let's make it a "Word Guessing Game." In this game, the player has to guess a word chosen randomly from a predefined list of words. The player is given a certain number of attempts to guess the word correctly.
+
+### Word Guessing Game
+
+- _Define a list of words:_ Create a list of words from which the program will randomly select one.
+- _Randomly select a word:_ Use the random module to select a word from the list.
+- _Set up the game loop:_ Use a loop to allow the player to guess the word within a certain number of attempts.
+- _Get user input:_ Use the input() function to get the player's guess.
+- _Provide feedback:_ Inform the player if their guess is correct or not, and how many attempts remain.
+- _End the game:_ Either when the player guesses the word correctly or runs out of attempts.
+
+4. Finally commit and push your work to the newly created branch "assigment1" this will create a branch to the remote repository.
